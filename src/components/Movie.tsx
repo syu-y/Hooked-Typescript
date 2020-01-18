@@ -12,7 +12,7 @@ type Props = {
 const Movie: React.FC<Props> = (props) => {
   const poster = props.movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : props.movie.Poster;
   return (
-    <div className="movie">
+    <div className="movie" id={props.movie.imdbID}>
       <h2>{props.movie.Title}</h2>
       <div>
         <img src={poster} alt={`The movie titled: ${props.movie.Title}`} width="200"/>
