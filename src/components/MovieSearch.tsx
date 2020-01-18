@@ -1,4 +1,4 @@
-import React, { useReducer, useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import "../App.css";
 import Header from './Header';
 import Movie from './Movie';
@@ -40,7 +40,7 @@ const MovieSerch: React.FC<AppProps> = (props: AppProps) => {
     .catch(err => {
       props.requestFailure(err);
     })
-  }, []);
+  });
 
   const search = (searchValue: string) => {
     props.searchMovie();

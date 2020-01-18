@@ -53,6 +53,13 @@
   max-width: 25%;
 }
 
+.movie h2{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+
 .errorMessage {
   margin: auto;
   font-weight: bold;
