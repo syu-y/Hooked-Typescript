@@ -40,7 +40,7 @@ const MovieSerch: React.FC<AppProps> = (props: AppProps) => {
     .catch(err => {
       props.requestFailure(err);
     })
-  });
+  }, []);
 
   const search = (searchValue: string) => {
     props.searchMovie();
